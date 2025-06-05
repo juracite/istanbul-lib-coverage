@@ -1137,6 +1137,6 @@ describe('findNearestContainer missing loc defense', () => {
             3: { loc: loc(20, 20, 40, 40) }
         };
         assert.equal(findNearestContainer({ no: 'loc' }, map), null);
-        assert.equal(findNearestContainer(loc(30, 30, 35, 35), '3'));
+        assert.equal(findNearestContainer(loc(30, 30, 35, 35), map), '3');
     });
 });
